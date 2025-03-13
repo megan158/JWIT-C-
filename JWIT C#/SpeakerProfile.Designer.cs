@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            btnAddSpeaker = new Button();
+            btnUpdateSpeaker = new Button();
+            btnRemoveSpeaker = new Button();
+            btnSearchSpeaker = new Button();
             textBox1 = new TextBox();
             label1 = new Label();
             label2 = new Label();
@@ -41,45 +41,47 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnAddSpeaker
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
-            button1.Location = new Point(29, 36);
-            button1.Name = "button1";
-            button1.Size = new Size(225, 34);
-            button1.TabIndex = 0;
-            button1.Text = "Add Speaker";
-            button1.UseVisualStyleBackColor = false;
+            btnAddSpeaker.BackColor = SystemColors.ActiveCaption;
+            btnAddSpeaker.Location = new Point(29, 36);
+            btnAddSpeaker.Name = "btnAddSpeaker";
+            btnAddSpeaker.Size = new Size(225, 34);
+            btnAddSpeaker.TabIndex = 0;
+            btnAddSpeaker.Text = "Add Speaker";
+            btnAddSpeaker.UseVisualStyleBackColor = false;
+            btnAddSpeaker.Click += button1_Click;
             // 
-            // button2
+            // btnUpdateSpeaker
             // 
-            button2.BackColor = SystemColors.ActiveCaption;
-            button2.Location = new Point(260, 36);
-            button2.Name = "button2";
-            button2.Size = new Size(216, 34);
-            button2.TabIndex = 1;
-            button2.Text = "Update Speaker";
-            button2.UseVisualStyleBackColor = false;
+            btnUpdateSpeaker.BackColor = SystemColors.ActiveCaption;
+            btnUpdateSpeaker.Location = new Point(260, 36);
+            btnUpdateSpeaker.Name = "btnUpdateSpeaker";
+            btnUpdateSpeaker.Size = new Size(216, 34);
+            btnUpdateSpeaker.TabIndex = 1;
+            btnUpdateSpeaker.Text = "Update Speaker";
+            btnUpdateSpeaker.UseVisualStyleBackColor = false;
+            btnUpdateSpeaker.Click += btnUpdateSpeaker_Click;
             // 
-            // button3
+            // btnRemoveSpeaker
             // 
-            button3.BackColor = SystemColors.ActiveCaption;
-            button3.Location = new Point(482, 36);
-            button3.Name = "button3";
-            button3.Size = new Size(209, 34);
-            button3.TabIndex = 2;
-            button3.Text = "Remove Speaker";
-            button3.UseVisualStyleBackColor = false;
+            btnRemoveSpeaker.BackColor = SystemColors.ActiveCaption;
+            btnRemoveSpeaker.Location = new Point(482, 36);
+            btnRemoveSpeaker.Name = "btnRemoveSpeaker";
+            btnRemoveSpeaker.Size = new Size(209, 34);
+            btnRemoveSpeaker.TabIndex = 2;
+            btnRemoveSpeaker.Text = "Remove Speaker";
+            btnRemoveSpeaker.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnSearchSpeaker
             // 
-            button4.BackColor = SystemColors.ActiveBorder;
-            button4.Location = new Point(72, 132);
-            button4.Name = "button4";
-            button4.Size = new Size(214, 34);
-            button4.TabIndex = 3;
-            button4.Text = "Search for Speakers";
-            button4.UseVisualStyleBackColor = false;
+            btnSearchSpeaker.BackColor = SystemColors.ActiveBorder;
+            btnSearchSpeaker.Location = new Point(72, 132);
+            btnSearchSpeaker.Name = "btnSearchSpeaker";
+            btnSearchSpeaker.Size = new Size(214, 34);
+            btnSearchSpeaker.TabIndex = 3;
+            btnSearchSpeaker.Text = "Search for Speakers";
+            btnSearchSpeaker.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -145,10 +147,10 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(textBox1);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnSearchSpeaker);
+            Controls.Add(btnRemoveSpeaker);
+            Controls.Add(btnUpdateSpeaker);
+            Controls.Add(btnAddSpeaker);
             Name = "SpeakerProfile";
             Text = "SpeakerProfile";
             Load += SpeakerProfile_Load;
@@ -159,10 +161,10 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button btnAddSpeaker;
+        private Button btnUpdateSpeaker;
+        private Button btnRemoveSpeaker;
+        private Button btnSearchSpeaker;
         private TextBox textBox1;
         private Label label1;
         private Label label2;

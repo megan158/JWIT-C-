@@ -46,7 +46,7 @@
             label1.Size = new Size(362, 38);
             label1.TabIndex = 0;
             label1.Text = "Welcome to JWIT Connect";
-            label1.Click += label1_Click;
+           // label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -85,6 +85,7 @@
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Login ";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // txtUsername
             // 

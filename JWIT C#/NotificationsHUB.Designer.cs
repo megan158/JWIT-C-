@@ -90,6 +90,7 @@
             btnSchedule.TabIndex = 5;
             btnSchedule.Text = "Schedule";
             btnSchedule.UseVisualStyleBackColor = false;
+            btnSchedule.Click += btnSchedule_Click;
             // 
             // btnProfiles
             // 

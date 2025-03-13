@@ -21,5 +21,15 @@ namespace JWIT_C_
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)  //btnAddSpeaker
+        {
+        }
+        
+
+        private void btnUpdateSpeaker_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
